@@ -1,6 +1,6 @@
 component output="false" {
 
-	remote boolean function login( required string assertion, string audieance=CGI.HTTP_HOST, boolean useSession=true ) {
+	remote boolean function login( required string assertion, string audience=CGI.HTTP_HOST, boolean useSession=true ) {
 		
 		var httpRequest = new http();
 		httpRequest.setMethod( "POST" );
@@ -10,7 +10,7 @@ component output="false" {
 		httpRequest.setResolveurl( false );
 		httpRequest.addParam(type="header",name="Host",value="verifier.login.persona.org");
 		httpRequest.addParam(type="formfield", name="assertion", value=arguments.assertion);
-		httpRequest.addParam(type="formfield", name="audience", value=arguments.audieance);
+		httpRequest.addParam(type="formfield", name="audience", value=arguments.audience);
 		
 		var response = httpRequest.send().getPrefix();
 		var responseString =  response.fileContent.toString( response.charset );
