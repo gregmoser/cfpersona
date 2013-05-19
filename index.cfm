@@ -45,7 +45,7 @@
 						<!--- If logged in, the show 'Sign Out' Button --->
 						<cfif session.cfpersona.authenticated>
 							
-							<button id="singout" type="button" class="btn">Sign Out</button>
+							<button id="signout" type="button" class="btn">Sign Out</button>
 							
 						<!--- Otherwise show 'Sign In' Button --->
 						<cfelse>
