@@ -14,10 +14,17 @@ Currently cfpersona offloads certificate verification to Mozilla via https. In t
 
 Read more about the details of Persona here: http://www.mozilla.org/en-US/persona/
 
+## Setup
+
+This repository is a fully functional application that can be run on your server to see how it works.  Just RUN IT BABY!
+
+The index.cfm, Application.cfc, & cfpersona.cfc all have well commented code to explain how it works.
+
 
 ## Requirements
 
 This implementation of persona uses Adobe ColdFusion 9+ or Railo 3+ because of the full script based component.  However Persona does not require anything specific about the server, and if you convert cfpersona to a tag bassed component it should work on any version of CF.
+
 
 ## License
 
